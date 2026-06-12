@@ -510,11 +510,6 @@ async function analyze() {
     return;
   }
 
-  if (GROQ_API_KEY === "YOUR_GROQ_API_KEY_HERE") {
-    showError("No API key found. Open the HTML file and replace YOUR_GROQ_API_KEY_HERE with your Groq key (free at console.groq.com).");
-    return;
-  }
-
   setLoading(true);
   hideError();
   document.getElementById("results").classList.remove("visible");
